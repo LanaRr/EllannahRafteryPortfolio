@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ellannah Raftery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+			
+			<section id="banner">
+				<header>
+					<h2>Rail Fence Cipher Application</h2>
+				</header>
+			</section>
+						
+			<div class="navbar">
+				<a  href="index.html">Home</a>
+				<a href="about.html"> About</a>
+				<a  href="project1.html"> E-Commerce Website</a>
+				<a class="active" href="project2.html">Java Application</a>
+				<a href="project3.html"> Database Design</a>
+				
+				<div class="topnav-right">
+					<a href="https://github.com/LanaRr"><i class="fab fa-lg fa-github-square"></i> </a>
+					<a href=" https://www.linkedin.com/in/ellannah-raftery-7a8994159 "><i class="fab fa-lg fa-linkedin"></i></a>
+				</div>
+			</div>
+			
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								
+								<header>
+								
+									<h2>Cipher Application</h2>
+									
+								</header>
+								
+								<h3>What is a rail fence cipher?</h3>
+								
+								<p> A rail fence cipher is an ancient method of encryption in which a message would be written on a piece of fabric. This collection of words would look random until wrapped around a device called a scytale. Once assembled the recipient is about to decipher the message.</p>
+								
+								
+								
+								<p>
+								As Part of my object-oriented programming module, I was assigned a project that involved creating a java application with a simple user menu. The function of the application is to take in text and encrypt it using a rail fence cipher. The outline specified that the application should have a simple navigation menu and be able to handle files or a URL as the input. A two-part variable was to be input to determine the number of rails (or rows) and the row in which the text would begin in.
+								</p>
+								 <p>As seen in the menu below there are five options you can choose from. Once the details are added in the first option the encrypted message can be displayed. Then the cipher text received can be parsed into to decrypt option which returns the original message. The fourth menu option is to display the Rail fence pattern created within the application.
+								 </p>
+								
+
+
+								
+								<div>
+								<img src="images/scytale.jpg" title="scytale" width= "225px"alt="Profile picture" style="float; margin-left:25px; margin-bottom: 5px" />
+								<img src="images/JavaMenu.jpg" title="Application Menu" height= "30%"alt="Profile picture" style="float; margin-left:25px; margin-bottom: 5px" />
+								<img src="images/railFenceCipher.png" title="Rail fence pattern "height= "30%"alt="Profile picture" style="float; margin-left:25px; margin-bottom: 5px" />
+								</div>
+								<section>
+							
+								
+									<header>
+										<h3>Implementation</h3>
+									</header>
+									<p>To hit the requirements, I first designed a simple menu class that printed a list of choices to the console. Using the scanner, the program read user input and related that to decision making and the addition of variables. The variables the user chose would determine how many rows would appear in the pattern and what row it would begin. Once these were assigned the user was asked to parse a file path or URL.</p>
+									
+									<p>I created a class to handle the files. The Url stream was declared and  wrapped in an input stream reader and a buffered reader. Using a loop each line was added to a String variable to be returned for use in other classes. The file handling was similar but the file was wrapped in a file input stream, Input stream reader and a buffered reader.</p>
+									
+									
+									 <p>The Rail Fence cipher class was made to handle the encryption, decryption, and creation of the matrix(pattern). I created a method that would create a blank matrix using the inputted number of rows and the number of characters in the message. Another method takes the plain text the user entered and parses it into the matrix by starting at the users chosen row and traversing through the rows and columns to create a zig zag. When the encryption method is invoked, it reads through the matrix each column in each row and outputs any character it finds to cipher text element. To decrypt this cipher text is added to each column of each row where a character is expected. To return the original text the program traverse diagonal through the matrix.</p>
+																	
+								</section>
+								
+							</article>
+
+					</div>
+				</section>
+			
+
+		
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
